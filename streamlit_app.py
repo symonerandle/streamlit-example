@@ -7,6 +7,10 @@ This is my streamlit app.
 
 @st.experimental_memo #(show_spinner=True)
 def load_data():
+    sb = st.side_bar()
+    with sb:
+        st.button("close grid", on_click=btn_chk)
+        
     return pd.read_csv("data/reddit_comments.csv")
 
 df = load_data()
@@ -19,7 +23,4 @@ def button_check():
     print("this button works!")
 
 btn_chk = button_check()
-sb = st.side_bar()
 
-with sb:
-    st.button("close grid", on_click=btn_chk)
