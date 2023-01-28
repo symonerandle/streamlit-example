@@ -5,7 +5,7 @@ import pandas as pd
 This is my streamlit app.
 """
 
-@st.experimental_memo(show_spinner=True)
+@st.experimental_memo #(show_spinner=True)
 def load_data():
     return pd.read_csv("data/reddit_comments.csv")
 
