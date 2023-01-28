@@ -17,6 +17,6 @@ st.dataframe(df)
     #return st.button("Show grid", on_click=load_data(df))
 
 def button_check():
-    return print("this button works!")
+    print("this button works!")
 
 st.button("close grid", on_click=button_check())
