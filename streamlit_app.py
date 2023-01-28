@@ -9,7 +9,6 @@ This is my streamlit app.
 def load_data():
     return pd.read_csv("data/reddit_comments.csv")
 
-
 df = load_data()
 st.dataframe(df)
 
@@ -19,4 +18,5 @@ st.dataframe(df)
 def button_check():
     print("this button works!")
 
-st.button("close grid", on_click=button_check())
+btn_chk = button_check()
+st.button("close grid", on_click=btn_chk)
