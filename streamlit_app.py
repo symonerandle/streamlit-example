@@ -5,7 +5,8 @@ import pandas as pd
 This is my streamlit app.
 """
 
-st.container()
+con = st.container()
+con.write("Inside container")
 
 @st.experimental_memo #(show_spinner=True)
 def load_data():
