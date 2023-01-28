@@ -5,7 +5,7 @@ import pandas as pd
 This is my streamlit app.
 """
 
-st.side_bar.button("Enter")
+
 
 @st.experimental_memo #(show_spinner=True)
 def load_data():
@@ -13,6 +13,8 @@ def load_data():
 
 df = load_data()
 st.dataframe(df)
+
+st.side_bar.button("Enter")
 
 #def hide_data():
     #return st.button("Show grid", on_click=load_data(df))
