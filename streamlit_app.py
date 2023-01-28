@@ -15,8 +15,8 @@ df = load_data()
 
 
 #Side bar area.
-st.expander("Score breakdown")
-st.expander("Comparison")
+st.expander.write("Score breakdown")
+st.expander.write("Comparison")
 #st.sidebar.button("Enter", on_click=st.dataframe(df))
 #st.text_input()
 
