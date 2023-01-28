@@ -9,8 +9,8 @@ This is my streamlit app.
 def load_data():
     sb = st.side_bar()
     with sb:
-        st.button("close grid", on_click=btn_chk)
-        
+        st.button("close grid")
+
     return pd.read_csv("data/reddit_comments.csv")
 
 df = load_data()
@@ -19,8 +19,8 @@ st.dataframe(df)
 #def hide_data():
     #return st.button("Show grid", on_click=load_data(df))
 
-def button_check():
-    print("this button works!")
+#def button_check():
+#   print("this button works!")
 
-btn_chk = button_check()
+#btn_chk = button_check()
 
