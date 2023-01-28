@@ -5,12 +5,10 @@ import pandas as pd
 This is my streamlit app.
 """
 
+st.side_bar.button("Enter")
+
 @st.experimental_memo #(show_spinner=True)
 def load_data():
-    sb = st.side_bar()
-    with sb:
-        st.button("close grid")
-
     return pd.read_csv("data/reddit_comments.csv")
 
 df = load_data()
