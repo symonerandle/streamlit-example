@@ -14,12 +14,13 @@ def load_data():
 df = load_data()
 
 
-#Side bar area.
+#expander area
 scrbd = st.expander("Score breakdown")
 comp = st.expander("Comparison")
 
 scrbd.write("Something")
 comp.write("Else")
+
 #st.sidebar.button("Enter", on_click=st.dataframe(df))
 #st.text_input()
 
