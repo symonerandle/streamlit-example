@@ -5,11 +5,11 @@ import pandas as pd
 This is my streamlit app.
 """
 
-
+st.container()
 
 @st.experimental_memo #(show_spinner=True)
 def load_data():
-    st.container()
+
     return pd.read_csv("data/reddit_comments.csv")
 
 df = load_data()
