@@ -9,10 +9,11 @@ This is my streamlit app.
 def load_data():
     return pd.read_csv("data/reddit_comments.csv")
 
-def hide_data():
-    return st.button("Show grid", on_click=load_data(df))
 
 df = load_data()
 st.dataframe(df)
 
+def hide_data():
+    return st.button("Show grid", on_click=load_data(df))
+    
 st.button("close grid", on_click=hide_data())
