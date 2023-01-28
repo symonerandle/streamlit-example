@@ -14,7 +14,7 @@ def load_data():
 df = load_data()
 st.dataframe(df)
 
-st.side_bar.button("Enter")
+st.side_bar()
 
 #def hide_data():
     #return st.button("Show grid", on_click=load_data(df))
