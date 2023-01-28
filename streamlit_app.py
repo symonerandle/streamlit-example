@@ -19,4 +19,7 @@ def button_check():
     print("this button works!")
 
 btn_chk = button_check()
-st.button("close grid", on_click=btn_chk)
+sb = st.side_bar()
+
+with sb:
+    st.button("close grid", on_click=btn_chk)
