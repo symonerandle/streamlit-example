@@ -13,7 +13,10 @@ def load_data():
 df = load_data()
 st.dataframe(df)
 
-def hide_data():
-    return st.button("Show grid", on_click=load_data(df))
-    
-st.button("close grid", on_click=hide_data())
+#def hide_data():
+    #return st.button("Show grid", on_click=load_data(df))
+
+def button_check():
+    return "this button works!"
+
+st.button("close grid", on_click=button_check())
