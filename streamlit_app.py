@@ -10,7 +10,7 @@ def load_data():
     return pd.read_csv("data/reddit_comments.csv")
 
 def hide_data():
-    return st.button("Show grid", on_click=load_data())
+    return st.button("Show grid", on_click=load_data(df))
 
 df = load_data()
 st.dataframe(df)
