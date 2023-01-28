@@ -6,16 +6,16 @@ con = st.container()
 con.write("Inside container")
 
 #Designer function to memorize dataframe display.
-@st.experimental_memo #(show_spinner=True)
+#@st.experimental_memo #(show_spinner=True)
 def load_data():
     return pd.read_csv("data/reddit_comments.csv")
 
 #Save load_data function into df var. access df in streamlit.
 df = load_data()
-st.dataframe(df)
+
 
 #Side bar area.
-st.sidebar.button("Enter")
+st.sidebar.button("Enter", on_click=st.dataframe(df))
 
 
 #def hide_data():
